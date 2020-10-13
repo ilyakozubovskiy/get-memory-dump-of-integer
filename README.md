@@ -1,2 +1,1 @@
-# get-memory-dump-of-integer
-
+## Task description
