@@ -1,5 +1,7 @@
 using NUnit.Framework;
 
+#pragma warning disable CA1707
+
 namespace BinaryRepresentation.Tasks
 {
     [TestFixture]
@@ -13,6 +15,6 @@ namespace BinaryRepresentation.Tasks
         [TestCase(-0, ExpectedResult = "0000000000000000000000000000000000000000000000000000000000000000")]
         [TestCase(-675433, ExpectedResult = "1111111111111111111111111111111111111111111101011011000110010111")]
         [TestCase(1087785542111225456, ExpectedResult = "0000111100011000100101110010111111101101010110000110011001110000")]
-        public string GetMemoryDumpOfTests(long number) => BitsManipulation.GetMemoryDumpOf(number);
+        public string GetMemoryDumpOf_Tests(long number) => BitsManipulation.GetMemoryDumpOf(number);
     }
 }
