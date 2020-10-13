@@ -1,1 +1,3 @@
 ## Task description
+
+Implement a [GetMemoryDumpOf](BinaryRepresentation/BitsManipulation.cs#L12) method ...
