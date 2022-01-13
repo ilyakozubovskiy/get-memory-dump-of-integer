@@ -10,8 +10,14 @@ namespace BinaryRepresentation
         /// <param name="number">Source number.</param>
         /// <returns>Binary memory representation of signed long integer.</returns>
         public static string GetMemoryDumpOf(long number)
-        {
-            throw new NotImplementedException("You need to implement this method.");
+        {   
+            char[] binary = new char[64];
+            for (int i = 0, j = 63; j >= 0; i++, j--)
+            {
+                binary[i] = (number >> j & 1) > 0 ? '1' : '0';
+            }
+
+            return new string(binary);
         }
     }
 }
